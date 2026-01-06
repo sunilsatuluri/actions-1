@@ -12,10 +12,12 @@ jobs:
     - name: Use SHA in a command
       run: echo "The commit SHA is $GITHUB_SHA"
 
-    - name: List and Read File
-      run: | 
-        echo "My First GitHub Action Job"
-        ls -ltra
-        cat README.md
-    - name: Generate ASCII Artwork
-      run: cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt
+    - name: Welcome message
+      run: echo "My First GitHub Action Job"
+    
+    - name: List files
+      run: ls
+
+    - name: Read file
+      run: cat README.md
+
