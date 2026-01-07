@@ -26,6 +26,7 @@ jobs:
       run: grep -i "dragon" dragon.txt
 
   deploy_job_3:
+    needs: build_job_1
     runs-on: ubuntu-latess
     steps:
     
